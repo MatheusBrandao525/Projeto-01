@@ -1,34 +1,123 @@
+@font-face {
+    font-family: 'Mokoto';
+    src: url("./fonts/Mokoto-Glitch-Mark_2.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.menu {
-  width: 100%;
-  height: 120px;
-  background-color: #000000;
+
+
+.menu-logo-top{
+    width: 100%;
+    background: #212121;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.ulMenu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.menu-logo-top img{
+    width: 120px;
 }
 
-.ulMenu li {
-  height: 100%;
-
-  list-style: none;
-  margin-top: 1.4rem !important;
+.coluna-lg-3{
+    width: 15%;
+    background-color: #212121;
+    height: 120px;
+    padding: 1rem;
+    color: #1faa12;
 }
 
-.ulMenu li a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #009829;
+.text-align-left{
+    text-align: left;
 }
 
-.ulMenu li a img {
-  width: 100px;
+.text-align-right{
+    text-align: right;
+}
+
+.coluna-lg-6{
+    width:70%;
+    background-color: #212121;
+    height: 120px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.display-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ulMenu{
+    width: 100%;
+    height: 50px;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style: none;
+}
+
+.ulMenu li{
+    list-style: none;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.ulMenu li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1faa12;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    width: 100%;
+    position: absolute;
+    height: 1000px;
+}
+
+.overlay{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.5 );
+}
+
+.h1-banner{
+    height: 1000px;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.h1-banner h1{
+    font-family: "Mokoto";
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+.h1-banner p{
+    font-weight: bold;
+    color: #1faa12;
+    letter-spacing: 20px;
 }
